@@ -1,0 +1,22 @@
+
+.stuff{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    position: relative;
+    z-index:0;
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    opacity: 0;
+}
+.namuun{
+    position: absolute;
+    z-index:1;
+}
+.namuun:hover + .box{
+    opacity:0.2;
+}
