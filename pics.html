@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+            body{
+        margin: 0 auto;
+    }
+    .container{
+        position: relative;
+        z-index:0;
+        width: 110vw;
+        height: 110vh;
+        background-color: #a92256;
+        display: inline-block;
+    }
+    .sidebar{
+        position: absolute;
+        z-index:1;
+        display: inline-block;
+        width:20vw;
+        height:110vh;
+        background-color: #7f1841;
+    }
+    .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        background-color: cyan;
+    }
+        
+    .change .bar2 {opacity: 0;}
+        
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        background-color: cyan;
+    }
+    .namuun{
+        padding-left:100px;
+        top: 100px;
+    }
+
+    .burmaa{
+        position: absolute;
+        top: 300px;
+        padding-left: 60px;
+        animation: examplead 1s forwards;
+    }
+
+    .boldoo{
+        position: absolute;
+        top: 600px;
+        padding-left:30px;
+        animation: boldoo 1s forwards;
+    }
+    .names{
+        color: white;
+        font-size:20px;
+    }
+
+@keyframes examplead {
+    from{
+        left:0px;
+    }
+    to{
+        left: 50px;
+    }
+    }
+    @keyframes boldoo {
+    from{
+        left:0px;
+    }
+    to{
+        left: 80px;
+    }
+    }
+    .pics{
+        position: absolute;
+        z-index:2;
+        left: 25vw;
+        top:1vh;
+        display: grid;
+        grid-template-columns:30vw 20vw 20vw auto;
+        grid-template-rows:30vh 30vh 40vh;
+        grid-template-areas:
+        "pic1 pic1 pic2"
+        "pic3 pic4 pic2"
+        "pic5 pic5 pic6";
+        gap: 5px;
+    }
+        .pic1{
+            grid-area: pic1;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    .pic2{
+        grid-area: pic2;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    .pic3{
+        grid-area: pic3;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    .pic4{
+        grid-area: pic4;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    .pic5{
+        grid-area: pic5;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    .pic6{
+        grid-area: pic6;
+        width: auto;
+        height:auto;
+        border: 1px solid white;
+    }
+    </style>
+</body>
+<div class="container" onclick="myFunction(this)">
+    <div class="sidebar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="names">
+            <div class="namuun">Namuun</div>
+            <div class="burmaa">Burmaa</div>
+            <div class="boldoo">Boldoo</div>
+        </div>
+    </div>
+    <div class="pics"> 
+    <div class="pic1"><img style="width:1283px;height:372.9px;" src="https://wallpaperaccess.com/full/3217146.jpg   " alt=""></div>
+    <div class="pic3"><img style="width:766px;height:373.5px;" src="https://cdn.wallpapersafari.com/89/71/vYaoRk.jpg"" alt=""></div>
+    <div class="pic2"><img style="width:510px;height:755.59px;" src="https://www.whatspaper.com/wp-content/uploads/2022/01/hd-regular-show-wallpaper-whatspaper-13.jpg" alt=""></div>
+    <div class="pic4"><img style="width:510px; height:373.5px;" src="https://images5.alphacoders.com/110/thumb-1920-1102266.jpg" alt=""></div>
+    <div class="pic5"><img style="width:1283px;height:498px;" src="https://i.pinimg.com/originals/3e/81/bd/3e81bda3e09473a90ce248caa27229d1.jpg" alt=""></div>
+    <div class="pic6"></div>
+    </div>
+</div>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    </script>
+</html>
