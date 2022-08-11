@@ -20,3 +20,17 @@
 .namuun:hover + .box{
     opacity:0.2;
 }
+.dulguun{
+    position: absolute;
+    z-index:1;
+}
+.dulguun:hover + .box{
+    opacity:0.2;
+}
+.chuka{
+    position: absolute;
+    z-index:1;
+}
+.chuka:hover + .box{
+    opacity:0.2;
+}
