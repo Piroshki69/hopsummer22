@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        height:48vh;
+        background-color: #242626;
+    }
+    .bottom{
+        width: 100vw;
+        height: 48vh;
+        background-color: #181919;
+    }
+    .background{
+        position: relative;
+        z-index: ;
+        width: 40vw;
+        height: 33vh;
+        background-color: #181919;
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+    }
+    .toppp{
+        position: sticky;   
+        width: 100vw;
+        height:4vh;
+        background-color:#242626;
+        border:0.5px solid #545559;
+    }
+    .pp{
+        position: absolute;
+        z-index:1;
+        width: 168px;
+        height: 168px;
+        border-radius:100px;
+        border:solid 3px #181919;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="toppp"></div>
+    <div class="top">
+        <div class="background"></div>
+        <div class="pp"><img style="width:168px;height:168px;border-radius:100px;" src="https://i.pinimg.com/474x/1d/81/e0/1d81e065de302045e5d8709bef235ac4.jpg" alt=""></div>
+    </div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>
